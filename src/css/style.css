@@ -1,0 +1,58 @@
+.promo {
+    height: 1000px;
+    background: url(../img/Rectangle\ 26.jpg) center center/cover no-repeat;
+}
+
+header {
+    border-bottom: 1px solid rgba(255, 255, 255, 30%);
+}
+
+header .container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 106px;
+}
+
+.logo {
+    width: 153px;
+    height: 46px;
+}
+
+.menu {
+    display: flex;
+    padding: 0px;
+    margin: 0;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu_link {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.social_medias {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+
+h1 {
+    margin-top: 200px;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+

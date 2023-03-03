@@ -1,0 +1,54 @@
+=p_14r($color)
+    font-weight: 400
+    font-size: 14px
+    color: $color
+
+=p_14m($color)
+    font-weight: 500
+    font-size: 14px
+    color: $color
+
+
+=p_18sb($color)
+    font-weight: 600
+    font-size: 18px
+    color: $color
+
+=p_24b($color)
+    font-weight: 700
+    font-size: 24px
+    color: $color
+
+=arrows()
+    display: flex      
+    justify-content: space-between
+    &_arrows
+        img 
+            margin: 5px
+            padding: 14px
+            height: 45px
+            width: 45px
+            background-color: $base_color
+
+=menu($color)
+    display: flex
+    padding: 0
+    margin: 0
+    gap: 40px
+    list-style: none
+    flex-wrap: wrap
+        
+    &_link 
+        +p_14m($color)
+        text-decoration: none
+        cursor: pointer
+        &:after
+            content: ''
+            display: block
+            margin: 0 auto
+            height: 2px
+            width: 0%
+            background-color: $color
+        &:hover
+            &:after  
+                width: 100%

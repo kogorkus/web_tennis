@@ -1,0 +1,230 @@
+h1 
+    margin-top: 200px
+    font-weight: 700
+    font-size: 48px
+    color: $main_text_color
+
+h2
+    font-weight: 700
+    font-size: 36px
+    color: $second_text_color
+
+h3
+    font-weight: 700
+    font-size: 27px
+    color: $second_text_color
+
+h4 
+    margin-top: 35px
+    font-weight: 600
+    font-size: 21px
+    color: $second_text_color
+
+.promo
+    height: 100%
+    background: url(../img/Rectangle\ 26.jpg) center center/cover no-repeat
+
+header
+    border-bottom: 1px solid rgba(255, 255, 255, 30%)
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 106px
+    .logo
+        width: 153px
+        height: 46px
+        cursor: pointer
+
+    .hamburger
+        display: none
+        
+    .menu 
+        +menu($main_text_color)
+      
+
+    .social_medias 
+        display: flex
+        align-items: center
+        padding: 0px
+        gap: 20px
+        cursor: pointer
+
+.video_btn 
+    margin-top: 60px
+    display: flex
+    align-items: center
+    cursor: pointer
+    .video_text
+        margin:0
+        margin-left: 30px
+        +p_18sb($main_text_color)
+    &:hover
+        transform: scale(110%)
+
+.services
+    display: flex
+    flex-wrap: wrap 
+    justify-content: space-between
+    margin-top: 202px
+    .cell
+        padding: 6px 6px 20px 6px
+    &_box 
+        padding: 35px 35px 40px
+        background-color: $base_color
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        cursor: pointer
+        
+        &_title
+            width: 100%
+            +p_18sb($main_text_color)
+        &_name
+            margin: 0
+            +p_24b($main_text_color)
+        &:hover
+            background-color:#433b8b
+            transform: scale(105%)
+
+.advantages
+    display: flex
+    margin-top: 150px
+
+    #advbox1
+        background: url(../img/Rectangle\ 39.jpg) center center/cover no-repeat
+    #advbox2
+        background: url(../img/Rectangle\ 41.jpg) center center/cover no-repeat
+    #advbox3
+        background: url(../img/Rectangle\ 43.jpg) center center/cover no-repeat  
+    
+    &_box
+        display: flex
+        justify-content: space-around
+        align-items: flex-end
+        height: 500px 
+        border: solid 25px $main_text_color
+        padding-bottom: 40px
+
+        text-shadow: 2px 2px 5px #000
+        font-size: 27px
+        text-align: center
+        color: $main_text_color
+
+.club
+    margin-top: 150px
+    position: relative
+    .cell
+        display: flex
+    &_image
+        position: relative
+        margin: 70px 0px 
+        display: flex
+        background: url(../img/Rectangle\ 45.jpg) center center/cover no-repeat
+        width: 50%
+        transform: translateX(20%)
+    &_description
+        padding: 70px 60px 85px 146px
+        background: #F7ECE1
+        width: 60%
+        +p_14r($second_text_color)
+        &_text
+            margin-top: 25px
+        &_list
+            margin-top: 25px
+        
+.coaches
+    margin-top: 150px
+    &_title
+        +arrows()
+    &_row
+        display: flex
+        justify-content: space-between
+    &_icon
+        margin-top: 75px
+        display: flex
+        text-align: center
+        flex-direction: column
+        img
+            margin: 0 15px
+        &_name
+            margin-top: 25px
+        &_description
+            margin-top: 15px
+            +p_14r($second_text_color)
+
+.prices_services
+    margin-top: 150px
+    &_row
+        display: flex
+        justify-content: space-between
+    .prices
+        &_title
+            margin-bottom: 75px
+        &_button
+            background-color: $base_color
+            margin-top: 30px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            padding: 15px 30px
+            gap: 10px
+            h4
+                margin: 0
+                color: $main_text_color
+                line-height: 140%
+    .services
+        margin: 0
+        &_title
+            width: 100%
+            +arrows()
+        &_picture_box
+            width: 100%
+            margin-top: 60px
+            padding: 30px 25px
+            &_image
+                padding: 30px 40px
+                display: flex
+                display: flex
+                align-items: flex-end
+                width: 100%
+                height: 270px
+                background: url(../img/Rectangle\ 40.png) center center/cover no-repeat
+                h3
+                    color: $main_text_color
+
+footer
+    background-color: #F7ECE1
+    margin-top: 150px
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 106px
+    .rights_reserved
+        +p_14m($second_text_color)
+        opacity: 0.3
+    .menu 
+        +menu($second_text_color)
+
+    .social_medias 
+        display: flex
+        align-items: center
+        padding: 0px
+        gap: 20px
+        cursor: pointer
+        &_icon
+            background-color: #8D86C9
+            display: block
+
+        #youtube
+            mask-image: url("/src/icons/Vector (1).svg")
+            width: 30px
+            height: 20px
+        #instagram
+            mask-image: url("/src/icons/Instagram-Glyph-Black-Logo.svg.svg")
+            width: 20px
+            height: 20px
+
+    
